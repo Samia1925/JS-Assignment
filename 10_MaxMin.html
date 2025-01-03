@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 10</title>
+</head>
+
+<body>
+
+    <!-- Find the max and min num in an array -->
+    <script>
+        let input = prompt("Enter a list of numbers separated by commas:");
+        let array = input.split(",");
+        let minValue = Math.min(...array);
+        let maxValue = Math.max(...array);
+        console.log("Minimum Element is:" + minValue);
+        console.log("Maximum Element is:" + maxValue);   
+    </script>
+</body>
+
+</html>

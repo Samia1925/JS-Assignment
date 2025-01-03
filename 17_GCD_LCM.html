@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 17</title>
+</head>
+
+<body>
+
+
+    <!-- A program to find GCD and LCM -->
+    <script>
+        function gcd(a, b) {
+            if (b === 0) {
+                return a;
+            } else {
+                temp = a % b;
+                return gcd(b, temp);
+            }
+        }
+        function lcm(a, b) {
+            return (a * b) / gcd(a, b);
+        }
+
+        function GCDAndLCM() {
+            let a = parseInt(prompt("Enter 1st number: "));
+            let b = parseInt(prompt("Enter 2nd number: "));
+            let gcdResult = gcd(a, b);
+            let lcmResult = lcm(a, b);
+            console.log("GCD: " + gcdResult);
+            console.log("LCM: " + lcmResult);
+        }
+        GCDAndLCM();
+    </script>
+</body>
+
+</html>

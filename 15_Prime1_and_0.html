@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 15</title>
+</head>
+
+<body>
+
+    <!-- A program to return 1 if it's arguments are prime numbers and otherwise 0-->
+    <script>
+        function isPrime(num) {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+        let num1 = parseInt(prompt("Enter first number:"));
+        let num2 = parseInt(prompt("Enter second number:"));
+        if(isPrime(num1)==true && isPrime(num2)==true){
+            console.log("1");
+        }else{
+            console.log("0");
+        }
+    </script>
+</body>
+
+</html>

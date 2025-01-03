@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 18 b</title>
+</head>
+
+<body>
+
+    <!-- A Program to calculate the series using function 1^2+2^2+3^2+...+n^2 -->
+    <script>
+        let input = parseInt(prompt("Enter the value of n: "));
+        function sumNum(number) {
+            let sum = 0;
+            for (let i = 1; i <= number; i++) {
+                let temp= i*i;
+                sum += temp;
+            }
+            return sum;
+        }
+        let result = sumNum(input);
+        console.log("The result of series is: " + result);
+    </script>
+</body>
+
+</html>

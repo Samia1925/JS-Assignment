@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 12</title>
+</head>
+
+<body>
+
+    <!-- A program to find if a number is palindrome or not -->
+    <script>
+        let input = parseInt(prompt("enter the number"));
+        let p;
+        function isPalindrome(input) {
+            let num = input.toString();
+            let rev = num.split('').reverse().join('');
+            if (rev == num) {
+                p = "YES";
+            }
+            else {
+                p = "NO";
+            }
+            return p;
+        }
+        console.log(isPalindrome(input));
+
+
+    </script>
+</body>
+
+</html>

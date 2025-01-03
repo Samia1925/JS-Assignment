@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 9</title>
+</head>
+
+<body>
+
+    <!-- A program to Find the factorial -->
+    <script>
+        let f;
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            }
+            f= n * factorial(n - 1);
+            return f;
+        }
+        let num = parseInt(prompt("Enter a number:"));
+        factor= factorial(num);
+        console.log("The factorial of "+ num + " is "+ factor);
+
+    </script>
+</body>
+
+</html>

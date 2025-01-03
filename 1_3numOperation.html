@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 1</title>
+</head>
+
+<body>
+
+    <!-- A program to find value of a equation which is x=a/(b-c) -->
+    <script>
+        let a = parseFloat(prompt("Enter value for a:"));
+        let b = parseFloat(prompt("Enter value for b:"));
+        let c = parseFloat(prompt("Enter value for c:"));
+        if (b - c === 0) {
+            console.log("Error: Division by zero.");
+        } else {
+            let x = a / (b - c);
+            console.log("The value of x is " + x);
+        }
+    </script>
+</body>
+
+</html>
